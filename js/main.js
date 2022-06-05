@@ -12,13 +12,6 @@ class Producto{
     }
 }
 
-let botones = document.querySelectorAll(".botonCompra");
-
-botones.forEach(elementos =>{
-    elementos.addEventListener("click", anadirAlCarrito)
-})
-
-
 
 let talles = document.querySelectorAll(".talle");
 
@@ -35,6 +28,15 @@ talles.forEach((sizes) =>{
     });
 });
 
+
+
+
+
+let botones = document.querySelectorAll(".botonCompra");
+
+botones.forEach(elementos =>{
+    elementos.addEventListener("click", anadirAlCarrito)
+})
 
 function anadirAlCarrito(evento){
 
@@ -56,10 +58,24 @@ function anadirAlCarrito(evento){
         carrito.push(producto);
     }else{
         carrito[index].cantidad++;
-        carrito[index].subtotal = carrito[index].precio*carrito[index].cantidad;
+        carrito[index].subtotal = carrito[index].precio * carrito[index].cantidad;
     }
 
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    carritoNav(carrito);
     
+}
+
+function carritoNav(arrayCarrito){
+    let textoCarrito = document.querySelector(".carrito");
+
+    let totalProductos = 0;
+
+    for(producto of arrayCarrito){
+        totalProductos += producto.cantidad;
+    }
+
+    textoCarrito.innerHTML = "";
+    textoCarrito.innerHTML = `<p>Ver Carrito (${totalProductos})</p>`;
+
 }

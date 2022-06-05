@@ -39,7 +39,7 @@ nav{
     background-color: transparent;
 }
 
-.ofertaLimitada{
+.carrito{
     border-radius: 16px;
     font-size: 30px;
     color: white;
@@ -47,7 +47,7 @@ nav{
     background-color: black;
     cursor: pointer;
 }
-.ofertaLimitada:hover{
+.carrito:hover{
     color:rgb(136, 136, 136);
 }
 

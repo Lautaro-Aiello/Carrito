@@ -36,4 +36,4 @@ const productos = [
         imagen: "./img/nikenegra.jpg",
         id: 6
     },
-]
+];

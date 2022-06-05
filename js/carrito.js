@@ -1,6 +1,6 @@
 const carrito = JSON.parse(localStorage.getItem("carrito"));
 
-let tbody = document.querySelector("#tbody")
+let tbody = document.querySelector("#tbody");
 
 function llenarCarro(arrayCarrito){
 
