@@ -1,0 +1,165 @@
+/* font-family: 'Cookie', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif; */
+html{
+    background-color: black;
+}
+body{
+    font-family: 'Lato', sans-serif;;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 14px 45px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+   display: flex;
+   align-items: center;
+   background-color: white;
+   padding: 9px 10px;
+   border-radius: 8px;
+   margin-right: 80px;
+}
+.search2{
+    margin-right: 163px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.ofertaLimitada{
+    border-radius: 16px;
+    font-size: 30px;
+    color: white;
+    border-color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.ofertaLimitada:hover{
+    color:rgb(136, 136, 136);
+}
+
+.textDecoration{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.textDecoration:hover{
+    color: rgb(136, 136, 136);
+}
+
+
+.imgSize{
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 85px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 57px;
+}
+
+
+
+.sliderImg{
+    width: 53vw!important;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+
+.sliderItem{
+    width: 100vw!important;
+}
+
+.backGround{
+    background-color: black!important;
+}
+.sliderTitle{
+    color: white;
+    position: absolute;
+    bottom: 62%;
+    right: 13%;
+    font-size: 61px;
+}
+.sliderPrecio{
+    color: white;
+    position: absolute;
+    bottom: 52%;
+    right: 14%;
+    font-size: 54px;
+    font-weight: 300;
+}
+
+
+
+.talles{
+    color: white;
+    position: absolute;
+    bottom: 30%;
+    right: 14%;
+    font-size: 30px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.talle{
+    margin: 10px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.botonCompra{
+    position: absolute;
+    bottom: 2%;
+    right: 16%;
+    background-color: #00000066 !important;
+    cursor: pointer;
+    border-radius: 16px !important;
+    font-size: 30px !important;
+    color: white !important;
+    border-color: white !important;
+}
+.botonCompra:hover{
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.design{
+    background-color: black;
+}
+
+
+th{
+    background-color: black;
+}
+
+.table-danger{
+    --bs-table-bg: #6b0000!important;
+    color: #fff!important;
+}
