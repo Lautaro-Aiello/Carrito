@@ -79,3 +79,8 @@ function carritoNav(arrayCarrito){
     textoCarrito.innerHTML = `<p>Ver Carrito (${totalProductos})</p>`;
 
 }
+
+let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
+if(carritoLocalStorage){
+    carritoNav(carritoLocalStorage);
+}

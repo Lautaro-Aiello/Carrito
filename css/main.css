@@ -163,3 +163,14 @@ th{
     --bs-table-bg: #6b0000!important;
     color: #fff!important;
 }
+
+.botonEliminar{
+    background-color: #6b0000;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 10px;
+}
+.botonEliminar:hover{
+    color: rgb(126, 126, 126);
+    border-color: rgb(126, 126, 126);
+}
