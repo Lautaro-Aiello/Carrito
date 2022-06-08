@@ -52,13 +52,17 @@ function anadirAlCarrito(evento){
     let precio = evento.target.parentNode.children[2].textContent;
     let imagen = evento.target.parentNode.children[0].src;
     let id = evento.target.parentNode.children[0].alt;
+    let precioInt = parseFloat(precio.substring(1, precio.length)).toFixed(3)
 
-    if(index == -1){
-        const producto = new Producto(nombre,precio,imagen,id);
+
+    if (index == -1) {
+        const producto = new Producto(nombre, precioInt, imagen, id);
         carrito.push(producto);
-    }else{
+    } else {
         carrito[index].cantidad++;
-        carrito[index].subtotal = carrito[index].precio * carrito[index].cantidad;
+        let SubTotal = carrito[index].precio * carrito[index].cantidad
+        carrito[index].subtotal = SubTotal.toFixed(3);
+
     }
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
@@ -71,7 +75,7 @@ function carritoNav(arrayCarrito){
 
     let totalProductos = 0;
 
-    for(producto of arrayCarrito){
+    for(let producto of arrayCarrito){
         totalProductos += producto.cantidad;
     }
 
@@ -84,3 +88,4 @@ let carritoLocalStorage = JSON.parse(localStorage.getItem("carrito"));
 if(carritoLocalStorage){
     carritoNav(carritoLocalStorage);
 }
+
