@@ -67,6 +67,16 @@ function anadirAlCarrito(evento){
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
     carritoNav(carrito);
+
+    Toastify({
+        text: "Articulo añadido",
+        duration: 2000,
+        gravity: "bottom",
+        position: "right",
+        style: {
+            background: "#6b0000",
+        }
+    }).showToast();
     
 }
 
