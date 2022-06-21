@@ -28,7 +28,7 @@ nav{
    background-color: white;
    padding: 9px 10px;
    border-radius: 8px;
-   margin-right: 80px;
+   margin-right: -63px;
 }
 .search2{
     margin-right: 163px;
@@ -37,6 +37,10 @@ nav{
 .searchInput{
     border: none;
     background-color: transparent;
+}
+
+.searchForm{
+    margin-right: 251px;
 }
 
 .carrito{
@@ -51,6 +55,11 @@ nav{
     color:rgb(136, 136, 136);
 }
 
+.navItem{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .textDecoration{
     cursor: pointer;
     text-decoration: none;
@@ -60,6 +69,9 @@ nav{
     color: rgb(136, 136, 136);
 }
 
+.carritoPos{
+    margin-right: 50px;
+}
 
 .imgSize{
     width: 150px;
@@ -75,7 +87,7 @@ nav{
 }
 
 .menuItem{
-    margin-right: 85px;
+    margin-right: 179px;
     font-family: 'Bebas Neue', cursive;
     font-size: 57px;
 }
@@ -173,4 +185,13 @@ th{
 .botonEliminar:hover{
     color: rgb(126, 126, 126);
     border-color: rgb(126, 126, 126);
+}
+
+.fondoForm{
+    background-color: black !important;
+    padding: 4px;
+}
+
+.form-label{
+    color: white !important;
 }
