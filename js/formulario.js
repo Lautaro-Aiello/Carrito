@@ -11,6 +11,19 @@ function enviarFormulario(){
 
 
 function submit() {
+    const mail = document.getElementById("mail").value;
+    const nombre = document.getElementById("nombre").value;
+    const mensaje = document.getElementById("mensaje").value;
+    
+    Swal.fire({
+        title: 'Genial!',
+        text: 'Mensaje enviado!',
+        icon: 'success',
+        confirmButtonText: 'Cool',
+        showConfirmButton: false,
+
+    })
+
     
     fetch("https://formsubmit.co/ajax/lautaroaiello2345@gmail.com", {
     method: "POST",
@@ -19,14 +32,15 @@ function submit() {
         'Accept': 'application/json'
     },
     body: JSON.stringify({
-        email: `Email:`,
-        name: `Nombre:`,
-        message: `Mensaje:`
+        email: `${mail}`,
+        name: `${nombre}`,
+        message: `${mensaje}`
     })
 })
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
+
 }
    
 

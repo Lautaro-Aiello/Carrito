@@ -8,6 +8,7 @@ body{
     font-family: 'Lato', sans-serif;;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 nav{
@@ -28,7 +29,7 @@ nav{
    background-color: white;
    padding: 9px 10px;
    border-radius: 8px;
-   margin-right: -63px;
+   margin-right: -23px;
 }
 .search2{
     margin-right: 163px;
@@ -189,9 +190,28 @@ th{
 
 .fondoForm{
     background-color: black !important;
-    padding: 4px;
+    padding: 6px;
+    margin-top: 76px;
 }
 
 .form-label{
     color: white !important;
+}
+
+.labelNombre{
+    margin-bottom: 10px;
+}
+.comentarioMargin{
+    margin-bottom: 5px;
+}
+.marginNombre{
+    margin-bottom: 10px;
+}
+
+.formulario{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: white;
+    margin-top:10px;
+    margin: 4px;
 }
