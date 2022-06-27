@@ -88,9 +88,12 @@ nav{
 }
 
 .menuItem{
-    margin-right: 179px;
+    margin-right: 81px;
     font-family: 'Bebas Neue', cursive;
     font-size: 57px;
+}
+.menuItem2{
+    margin-right: 255px !important;
 }
 
 
@@ -214,4 +217,8 @@ th{
     color: white;
     margin-top:10px;
     margin: 4px;
+}
+
+.filtro{
+    display: none;
 }
